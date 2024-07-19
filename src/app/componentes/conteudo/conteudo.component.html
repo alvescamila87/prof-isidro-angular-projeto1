@@ -1,1 +1,6 @@
-<p>conteudo works!</p>
+<div id="bg">
+  <p>conteudo works!  Mensagem: {{ mensagem }} - Valor: {{ valor }}</p>
+  <button (click)="mudarValor()">Mudar valor</button>
+
+  <img [src]="link_foto" width="100%">
+</div>
