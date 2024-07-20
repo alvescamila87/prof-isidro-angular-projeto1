@@ -1,9 +1,10 @@
+import { FormsModule } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-conteudo',
   standalone: true,
-  imports: [],
+  imports: [FormsModule],
   templateUrl: './conteudo.component.html',
   styleUrl: './conteudo.component.css'
 })
@@ -28,5 +29,9 @@ export class ConteudoComponent implements OnInit{
     this.valor++;
     this.link_foto = "/assets/ProfileSenai.png"
     console.log(this.valor);
+  }
+
+  public enviarDados(){
+
   }
 }
