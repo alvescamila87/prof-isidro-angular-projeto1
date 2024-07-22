@@ -13,11 +13,18 @@ export class ConteudoComponent implements OnInit{
   public mensagem: string;
   public valor = 0;
   public link_foto: string;
+  public textoForm: string;
+  public senha: string = "";
+  //public clicado: number;
+  public clicado: boolean;
 
   public constructor(){
     //console.log("Chamando construtor....")
-    this.mensagem = "Hello world!"
-    this.link_foto = "/assets/ISIFLIX.png"
+    this.mensagem = "Hello world!";
+    this.link_foto = "/assets/ISIFLIX.png";
+    this.textoForm = "";
+    //this.clicado = 0;
+    this.clicado = false;
   }
 
   ngOnInit(): void {
@@ -32,6 +39,8 @@ export class ConteudoComponent implements OnInit{
   }
 
   public enviarDados(){
-
+    //console.log("Texto do formulario: " + this.textoForm);
+    //this.textoForm = "teste1"
+    console.log(this.textoForm + " / " + this.senha + " / " + this.clicado);
   }
 }

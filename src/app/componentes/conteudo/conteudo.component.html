@@ -1,7 +1,14 @@
 <div id="bg">
 
-  <input type="text" id="meuTxt">
-  <button (click)="enviarDados()"></button>
+  Login:
+  <input type="text" id="meuTxt" [(ngModel)]="textoForm">
+  <br>
+  Senha:
+  <input type="text" id="minhaSenha" [(ngModel)]="senha"><br>
+  <input type="checkbox" [(ngModel)]="clicado">Clique aqui!<br>
+
+  <button (click)="enviarDados()">Enviar dados</button>
+
   <p>conteudo works!  Mensagem: {{ mensagem }} - Valor: {{ valor }}</p>
   <button (click)="mudarValor()">Mudar valor</button>
 

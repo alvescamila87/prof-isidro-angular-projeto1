@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { RouterLink, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-cabecalho',
   standalone: true,
-  imports: [RouterModule],
+  imports: [RouterLink],
   templateUrl: './cabecalho.component.html',
   styleUrl: './cabecalho.component.css'
 })
