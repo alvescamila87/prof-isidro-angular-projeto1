@@ -1,2 +1,9 @@
 <p>componente2 works!</p>
 <button (click)="enviarDados()">Enviar dados</button>
+
+<hr>
+<h3>Posts recuperados</h3>
+
+<div *ngFor="let ITEM of lista">
+  <p>{{ ITEM.id}} - ({{ ITEM.userId }}) {{ ITEM.title }}</p>
+</div>
