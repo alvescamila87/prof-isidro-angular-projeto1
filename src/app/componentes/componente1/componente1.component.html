@@ -1,1 +1,6 @@
 <p>componente1 works!</p>
+<button (click)="incrementa()">Muda valor</button>
+<p>Valor do pai = {{ valor }} - Valor vindo do filho = {{ valorRecebido }}</p>
+<!-- a propriedade filho (valorFilho) recebe o conteudo da propriedade do pai (valor): property binding -->
+<app-filho [valorFilho]="valor" (eventoFilho)="trataEvento($event)"></app-filho>
+<!-- event emitter recebe informacao de filho com $event -->
