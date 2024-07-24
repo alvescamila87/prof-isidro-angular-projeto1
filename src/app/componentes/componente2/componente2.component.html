@@ -1,3 +1,7 @@
+<div id="loader" *ngIf="loading">
+  <span id="spinner"></span>
+</div>
+
 <p>componente2 works!</p>
 <button (click)="enviarDados()">Enviar dados</button>
 
@@ -5,5 +9,8 @@
 <h3>Posts recuperados</h3>
 
 <div *ngFor="let ITEM of lista">
+  <!--exemplo de condicionamento de informacao-->
+  <!--<p *ngIf="ITEM.userId != 1">{{ ITEM.id}} - ({{ ITEM.userId }}) {{ ITEM.title }}</p>  -->
+  <!--<p *ngIf="ITEM.userId %2 == 0">{{ ITEM.id}} - ({{ ITEM.userId }}) {{ ITEM.title }}</p>  -->
   <p>{{ ITEM.id}} - ({{ ITEM.userId }}) {{ ITEM.title }}</p>
 </div>
